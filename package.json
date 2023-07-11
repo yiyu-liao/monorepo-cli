@@ -1,0 +1,46 @@
+{
+  "name": "monorepo-cli",
+  "version": "1.0.0",
+  "description": "LucasLiao",
+  "main": "lib/index.js",
+  "type": "module",
+  "bin": {
+    "monorepo-cli": "lib/index.js"
+  },
+  "scripts": {
+    "dev": "node --experimental-specifier-resolution=node --loader ts-node/esm src/index.ts",
+    "start": "node --experimental-specifier-resolution=node lib/index.js",
+    "build": "tsc",
+    "lint": "eslint --ext .ts .",
+    "lint:fix": "eslint --fix --ext .ts .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "commander": "^11.0.0",
+    "handlebars": "^4.7.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/git-clone": "^0.2.0",
+    "@types/inquirer": "^9.0.3",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "fs-extra": "^11.1.1",
+    "git-clone": "^0.2.0",
+    "inquirer": "^9.2.7",
+    "ora": "^6.3.1",
+    "prettier": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yiyu-liao/monorepo-cli"
+  }
+}
