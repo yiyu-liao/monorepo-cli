@@ -1,11 +1,11 @@
 {
-  "name": "@lucas/monorepo-cli",
+  "name": "@gogogolucas/monorepo-cli",
   "version": "1.0.0",
   "description": "cli tool for monorepo",
   "main": "lib/index.js",
   "type": "module",
   "bin": {
-    "@lucas/monorepo-cli": "lib/index.js"
+    "@gogogolucas/monorepo-cli": "lib/index.js"
   },
   "scripts": {
     "dev": "node --experimental-specifier-resolution=node --loader ts-node/esm src/index.ts",
@@ -41,6 +41,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yiyu-liao/monorepo-cli"
+    "url": "git+https://github.com/yiyu-liao/monorepo-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yiyu-liao/monorepo-cli/issues"
+  },
+  "homepage": "https://github.com/yiyu-liao/monorepo-cli#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
