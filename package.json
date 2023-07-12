@@ -1,11 +1,11 @@
 {
-  "name": "monorepo-cli",
+  "name": "@lucas/monorepo-cli",
   "version": "1.0.0",
   "description": "cli tool for monorepo",
   "main": "lib/index.js",
   "type": "module",
   "bin": {
-    "monorepo-cli": "lib/index.js"
+    "@lucas/monorepo-cli": "lib/index.js"
   },
   "scripts": {
     "dev": "node --experimental-specifier-resolution=node --loader ts-node/esm src/index.ts",
